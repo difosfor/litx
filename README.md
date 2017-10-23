@@ -1,6 +1,6 @@
 # LitX
 
-Combining the powers of [lit-html](https://github.com/PolymerLabs/lit-html) and [MobX](https://mobx.js.org) to provide a light weight standard [custom element]() based alternative to Polymer.
+Combining the powers of [lit-html](https://github.com/PolymerLabs/lit-html) and [MobX](https://mobx.js.org) to provide a light weight standard [Custom Elements](https://developer.mozilla.org/en-US/docs/Web/Web_Components/Custom_Elements) based alternative to Polymer.
 
 **Note: This is currently just a work in progress!**
 
@@ -28,10 +28,8 @@ Until that time I guess I'll have to stick to what's supported by Chrome (e.g: n
 
 ### Test
 
-For now there will only be a little playground `test.html` file providing a minimalistic test page to be opened in your browser, e.g: (assuming you have globally installed [live-server](https://www.npmjs.com/package/live-server))
+For now there will only be a little playground `test.html` file providing a minimalistic test page to be opened in your browser:
 
-    live-server
-
-And then open: http://127.0.0.1:8080/test/test.html
+    npm run test
 
 **TODO: Use [web-component-tester](https://github.com/Polymer/web-component-tester) or something similar to implement tests**

@@ -7,7 +7,7 @@ class LitxTest extends LitXElement {
     return [
       'color',
       'foo',
-      'fooBar'
+      'fooBar',
     ];
   }
 
@@ -17,7 +17,7 @@ class LitxTest extends LitXElement {
     });
 
     extendObservable(this, {
-      counter: 0
+      counter: 0,
     });
 
     console.log('this childNodes', this.childNodes);

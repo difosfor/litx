@@ -18,6 +18,6 @@
   },
   "scripts": {
     "lint": "eslint . --ext js --ignore-path .gitignore",
-    "start": "live-server --open=test/test.html"
+    "test": "live-server --open=test/test.html"
   }
 }
