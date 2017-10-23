@@ -1,0 +1,24 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "google"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
+  },
+  "env": {
+    "browser": true
+  },
+  "rules": {
+    "max-len": [
+      "error",
+      120
+    ],
+    "no-console": "off",
+    "require-jsdoc": "off",
+    "valid-jsdoc": "off"
+  }
+}

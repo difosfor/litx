@@ -1,0 +1,23 @@
+{
+  "name": "litx",
+  "description": "lit-html meets MobX",
+  "license": "MIT",
+  "repository": "difosfor/litx",
+  "devDependencies": {
+    "babel-plugin-module-resolver": "^2.7.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-preset-env": "^1.6.1",
+    "eslint": "^4.9.0",
+    "eslint-config-google": "^0.9.1",
+    "live-server": "^1.2.0"
+  },
+  "dependencies": {
+    "lit-html": "^0.7.1",
+    "mobx": "^3.3.1"
+  },
+  "scripts": {
+    "lint": "eslint . --ext js --ignore-path .gitignore",
+    "start": "live-server --open=test/test.html"
+  }
+}
