@@ -50,8 +50,10 @@ class LitxTest extends LitXElement {
       <label>counter:</label> ${this.counter} <button on-click="${() => this.counter++}">+</button><br>
 
       <!-- Include any content passed to this element -->
-      <!-- TODO: Make this work dynamically, e.g: using this.childNodes? (also have it not break without Shadow DOM) -->
-      <label>content:</label> ${html([this.innerHTML])}<br>
+      <label>content:</label> <slot> -- no content -- </slot><br>
+
+      <!-- And named slot content -->
+      <label>footer:</label> <slot name="footer"> -- no footer -- </slot><br>
     `;
   }
 
