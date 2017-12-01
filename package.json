@@ -13,7 +13,7 @@
     "live-server": "^1.2.0"
   },
   "dependencies": {
-    "lit-html": "^0.7.1",
+    "lit-html": "^0.8.0-pre.1",
     "mobx": "^3.3.2"
   },
   "scripts": {

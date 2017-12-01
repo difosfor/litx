@@ -26,12 +26,12 @@ class LitxTest extends LitXElement {
   render() {
     console.log('render', this);
 
-    // TODO: Figure out how to use attribute property expressions in CSS, e.g: background: ${this.color};
     return html`
       <style>
         /* Shadow root CSS */
         :host {
           display: block;
+          background-color: ${this.color};
         }
         label {
           display: inline-block;
@@ -44,12 +44,12 @@ class LitxTest extends LitXElement {
       <label>foo:</label> ${this.foo}<br>
 
       <!-- Camel case attribute property expression and event listener -->
-      <label>fooBar:</label> <input type="text" value$="${this.fooBar}" on-input="${(e) => this.onFooBarInput(e)}"><br>
+      <label>fooBar:</label> <input type="text" value="${this.fooBar}" on-input="${(e) => this.onFooBarInput(e)}"><br>
 
       <!-- Basic property expression and event listener -->
       <label>counter:</label> ${this.counter} <button on-click="${() => this.counter++}">+</button><br>
 
-      <!-- Include any content passed to this element -->
+      <!-- Include any content and corresponding style passed to this element -->
       <label>content:</label> <slot> -- no content -- </slot><br>
 
       <!-- And named slot content -->
